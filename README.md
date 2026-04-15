@@ -54,8 +54,20 @@ Run an individual class directly after compiling:
 
 ```bash
 mvn compile
-java -cp target/classes com.example.corejava.algorithms.TwoSumExample
+java -cp target/classes com.examples.corejava.algorithms.TwoSumExample
 ```
+
+Run the e-commerce real-life examples:
+
+```bash
+mvn compile
+java -cp target/classes com.examples.reallife.runner.RealLifeDemoRunner all
+java -cp target/classes com.examples.reallife.runner.RealLifeDemoRunner algorithms
+```
+
+The `com.examples.reallife` package mirrors the core topics with backend e-commerce
+examples such as multi-warehouse fulfillment, cart pricing, inventory counters,
+delivery windows, catalog lookup, promotion validation, and payment abstraction.
 
 ## Topic Index
 
