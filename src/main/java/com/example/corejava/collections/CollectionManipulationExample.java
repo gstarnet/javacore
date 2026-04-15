@@ -4,12 +4,37 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+
+/**
+ * Demonstrates practical collection manipulation: add, read, update, remove, sort,
+ * filter, and transform.
+ *
+ * <p>Interview questions answered: How do common list operations work? When are streams
+ * readable for filtering and mapping?</p>
+ *
+ * <p>Real-life use: preparing display lists, normalizing user input, and transforming API
+ * response data.</p>
+ */
 public class CollectionManipulationExample {
+    private CollectionManipulationExample() {
+    }
+    /**
+     * Runs this example directly from the command line.
+     *
+     * @param args command-line arguments; ignored by this example
+     */
     public static void main(String[] args) {
         run();
     }
 
+    /**
+     * Executes the example logic used by {@code DemoRunner} and tests.
+     */
     public static void run() {
+        // Walkthrough:
+        // 1. Build a mutable list so add, update, remove, and sort operations are visible.
+        // 2. Use normal list methods for direct manipulation and streams for filter/map examples.
+        // 3. Print each stage so a beginner can connect the method call to the changed data.
         List<String> names = new ArrayList<>();
         names.add("Ada");
         names.add("Grace");

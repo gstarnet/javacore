@@ -13,6 +13,22 @@ This is a Java 17 Maven project with small, runnable console examples for core J
 mvn clean package
 ```
 
+## Test
+
+```bash
+mvn test
+```
+
+The test suite uses JUnit 5. It verifies that every runnable example class starts successfully and that `DemoRunner` handles topic selection, help, and unknown topics.
+
+## Generate JavaDocs
+
+```bash
+mvn javadoc:javadoc
+```
+
+Generated documentation is written to `target/site/apidocs/index.html`.
+
 ## Run
 
 Run every demo:

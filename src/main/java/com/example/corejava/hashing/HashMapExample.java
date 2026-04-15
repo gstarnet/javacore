@@ -4,12 +4,35 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * Demonstrates core {@code HashMap} operations and complement lookup.
+ *
+ * <p>Interview questions answered: What do {@code put}, {@code get},
+ * {@code containsKey}, and {@code getOrDefault} do? Why is lookup average {@code O(1)}?</p>
+ *
+ * <p>Real-life use: caches, indexes, score tables, and fast pair matching.</p>
+ */
 public class HashMapExample {
+    private HashMapExample() {
+    }
+    /**
+     * Runs this example directly from the command line.
+     *
+     * @param args command-line arguments; ignored by this example
+     */
     public static void main(String[] args) {
         run();
     }
 
+    /**
+     * Executes the example logic used by {@code DemoRunner} and tests.
+     */
     public static void run() {
+        // Walkthrough:
+        // 1. Put a few values into a HashMap and read them back by key.
+        // 2. Use getOrDefault to handle a missing key without a separate null check.
+        // 3. Then reuse the map idea for the complement lookup interview pattern.
         Map<String, Integer> scores = new HashMap<>();
         scores.put("Ada", 95);
         scores.put("Grace", 98);

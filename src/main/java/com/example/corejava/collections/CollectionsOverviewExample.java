@@ -14,12 +14,36 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 
+
+/**
+ * Demonstrates the main Java collection families and their typical behavior.
+ *
+ * <p>Interview questions answered: When do you choose a {@code List}, {@code Set},
+ * {@code Map}, queue, sorted collection, or concurrent map?</p>
+ *
+ * <p>Real-life use: selecting the right collection for API results, caches, queues, and
+ * ordered views.</p>
+ */
 public class CollectionsOverviewExample {
+    private CollectionsOverviewExample() {
+    }
+    /**
+     * Runs this example directly from the command line.
+     *
+     * @param args command-line arguments; ignored by this example
+     */
     public static void main(String[] args) {
         run();
     }
 
+    /**
+     * Executes the example logic used by {@code DemoRunner} and tests.
+     */
     public static void run() {
+        // Walkthrough:
+        // 1. Create one small example of each major collection type.
+        // 2. Print the behavior that makes each type useful, such as uniqueness or sorted order.
+        // 3. Use the output as a quick interview comparison map.
         List<String> arrayList = new ArrayList<>(List.of("A", "B"));
         List<String> linkedList = new LinkedList<>(List.of("first", "second"));
         Set<String> hashSet = new HashSet<>(Set.of("red", "blue"));

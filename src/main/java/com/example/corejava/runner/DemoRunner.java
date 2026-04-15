@@ -60,7 +60,19 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+
+/**
+ * Main entry point that runs all examples or a selected topic group from the command line.
+ *
+ * <p>Interview questions answered: How can small demos be organized behind one runner?
+ * How are command-line arguments used to choose behavior?</p>
+ *
+ * <p>Real-life use: lightweight console launchers for training projects, diagnostics, or
+ * developer utilities.</p>
+ */
 public class DemoRunner {
+    private DemoRunner() {
+    }
     private static final Map<String, List<Demo>> DEMOS = new LinkedHashMap<>();
 
     static {
@@ -151,7 +163,16 @@ public class DemoRunner {
         ));
     }
 
+    /**
+     * Runs all examples or a selected topic group from the command line.
+     *
+     * @param args optional topic name such as {@code all}, {@code strings}, or {@code help}
+     */
     public static void main(String[] args) {
+        // Walkthrough:
+        // 1. Read the first command-line argument, or default to running every topic.
+        // 2. Handle help and unknown topics before any demos execute.
+        // 3. Run either all topic groups or the selected group with readable section headers.
         String topic = args.length == 0 ? "all" : args[0].toLowerCase(Locale.ROOT);
         if ("help".equals(topic)) {
             printHelp();

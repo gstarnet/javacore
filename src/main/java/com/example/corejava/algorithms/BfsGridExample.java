@@ -3,12 +3,36 @@ package com.example.corejava.algorithms;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+
+/**
+ * Demonstrates breadth-first search with a queue over a two-dimensional grid.
+ *
+ * <p>Interview questions answered: How does BFS visit nearest cells first? Why do we need
+ * a visited structure?</p>
+ *
+ * <p>Real-life use: finding reachable map cells, flood fill areas, or shortest paths in
+ * unweighted grids.</p>
+ */
 public class BfsGridExample {
+    private BfsGridExample() {
+    }
+    /**
+     * Runs this example directly from the command line.
+     *
+     * @param args command-line arguments; ignored by this example
+     */
     public static void main(String[] args) {
         run();
     }
 
+    /**
+     * Executes the example logic used by {@code DemoRunner} and tests.
+     */
     public static void run() {
+        // Walkthrough:
+        // 1. Put the starting cell in a queue and mark it visited immediately.
+        // 2. Remove one cell at a time and inspect its four neighbors.
+        // 3. Add only in-bounds, walkable, unseen neighbors so each cell is processed once.
         int[][] grid = {
                 {1, 1, 0},
                 {0, 1, 1},
