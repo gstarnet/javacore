@@ -1,0 +1,143 @@
+# Project-local Codex prompts and scratch context
+CodexPrompt*
+CodexPromp*
+CodexPromps*
+*.prompt.txt
+
+# Java, Maven, Gradle, and build output
+target/
+build/
+out/
+bin/
+classes/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jpi
+*.hpi
+*.log
+
+# Maven wrapper downloads and release artifacts
+.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
+release.properties
+
+# Gradle, included for Java developers who open/import with Gradle tooling
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / Spring Tool Suite
+.classpath
+.project
+.settings/
+.metadata/
+*.launch
+.factorypath
+.apt_generated/
+.apt_generated_tests/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code / Cursor / Windsurf / Theia
+.vscode/
+.cursor/
+.windsurf/
+.theia/
+
+# JDeveloper / Oracle IDEs
+.adf/
+.jdev_user/
+*.jws
+*.jpr
+
+# BlueJ / DrJava
+*.ctxt
+.bluej/
+*.drjava
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100/
+.Trashes/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs, dumps, and temporary files
+logs/
+*.log.*
+*.pid
+*.seed
+*.pid.lock
+*.stackdump
+hs_err_pid*
+replay_pid*
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Test and coverage output
+surefire-reports/
+failsafe-reports/
+jacoco.exec
+coverage/
+.nyc_output/
+
+# Command-line tool caches and local environment files
+.env
+.env.*
+!.env.example
+.tool-versions.local
+.sdkmanrc.local
+.java-version.local
+.m2/repository/
+.cache/
+.tmp/
+tmp/
+temp/
+
+# Node and frontend tooling, in case examples/docs are extended later
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Python tooling sometimes used for scripts/docs around Java repos
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Archives and local generated reports
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+reports/
+site/
